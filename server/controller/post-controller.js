@@ -1,5 +1,5 @@
-const Post = require('../models/Post');
-const User = require('../models/User');
+const Post = require('../models/post');
+const User = require('../models/user');
 require("dotenv").config();
 const cloudinary = require('cloudinary').v2;
 const multer = require("multer");
