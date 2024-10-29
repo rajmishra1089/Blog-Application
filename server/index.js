@@ -4,7 +4,14 @@ const app = express();
  
 app.use(express.json());
 
-app.use(cors({origin: 'https://blog-application-m70g.onrender.com',credentials: true })); 
+app.use(cors({origin: 'https://blog-application-frontend-6ffk.onrender.com',
+              credentials: true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type, Authorization',
+    exposedHeaders: 'Content-Length, X-Kuma-Revision',
+    maxAge: 600,
+    preflightContinue: false,
+    optionsSuccessStatus: 204 })); 
 require('dotenv').config();
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
