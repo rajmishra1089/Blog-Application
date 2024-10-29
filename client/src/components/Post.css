@@ -1,0 +1,140 @@
+/* DisplayAllBlogs.css */
+
+.blog-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.welcome {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.post-image img {
+    max-width: 300px;
+    max-height: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.post-body {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.post-info {
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    gap: 15px;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+    align-items: center;
+    cursor: pointer;
+}
+
+.post-info span {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #007bff;
+}
+
+/* Post.css */
+
+.comments-section {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    background-color: #fafafa; /* Light background for contrast */
+    border-radius: 4px; /* Slight rounding of corners */
+    padding: 15px; /* Padding for better spacing */
+}
+
+.comments {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.comment {
+    background-color: #e9ecef; /* Slightly darker for better visibility */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Increased margin for better separation */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.comment:hover {
+    background-color: #dee2e6; /* Darker shade on hover for interaction feedback */
+}
+
+.comment strong {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; /* Ensures the name is on a new line */
+}
+
+.comment p {
+    color: #555;
+    margin: 0;
+}
+
+.add-comment {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px; /* Increased gap for better spacing */
+}
+
+.add-comment input {
+    flex: 1;
+    padding: 10px; /* Increased padding for comfort */
+    border: 1px solid #ccc; /* Slightly darker border for visibility */
+    border-radius: 4px;
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+
+.add-comment input:focus {
+    border-color: #007bff; /* Highlight border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.add-comment button {
+    padding: 10px 15px; /* Increased padding for better size */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+.add-comment button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

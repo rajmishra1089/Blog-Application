@@ -1,0 +1,84 @@
+/* Wrapper for the entire form */
+.create-blog-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title at the top of the form */
+  .create-blog-container h2 {
+    color: #333333;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Label styling for each field */
+  .create-blog-container label {
+    color: #555555;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  /* Input field and textarea styling */
+  .create-blog-container input[type="text"],
+  .create-blog-container textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Focus effect for input fields */
+  .create-blog-container input[type="text"]:focus,
+  .create-blog-container textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+  }
+  
+  /* File input styling */
+  .create-blog-container input[type="file"] {
+    padding: 0.4rem;
+    color: #555555;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  /* Submit button styling */
+  .create-blog-container button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-blog-container button[type="submit"]:hover {
+    background-color: #357abd;
+  }
+  
+  /* Message styling */
+  .create-blog-container p {
+    text-align: center;
+    color: #28a745;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Error message styling */
+  .create-blog-container p.error {
+    color: #e74c3c;
+  }
+  
