@@ -3,6 +3,7 @@ import axios from "axios";
 const userContext=createContext();
 
 const UserProvider = ({children})=>{
+     const backendUrl = process.env.REACT_APP_API_BASE_URL;
     const [user,setUser]=useState({
         name:"",
         _id:"",
@@ -22,7 +23,7 @@ const UserProvider = ({children})=>{
   useEffect(() => {
     const restoreSession = async () => {
       try {
-        const res = await axios.get("http://localhost:4000/user/getUserData", {
+        const res = await axios.get(`${backendUrl}/user/getUserData`, {
           withCredentials: true, // Include cookies in the request
         });
 
