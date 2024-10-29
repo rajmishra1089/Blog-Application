@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 4000;
 const dbConnect = require('./config/database'); 
 dbConnect(); 
 
-const user=require('./routes/user');
+const user=require('./routes/user-route');
 app.use('/user',user)
 
 const post=require('./routes/post-route');
